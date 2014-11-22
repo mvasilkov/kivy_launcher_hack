@@ -4,3 +4,13 @@ vi KivyLauncher/AndroidManifest.xml
 +    <uses-permission android:name="android.permission.RECORD_AUDIO" />
 
 apktool b KivyLauncher KivyLauncherMod.apk
+
+keytool -genkey -v -keystore debug.keystore -alias android \
+    -keyalg RSA -keysize 2048 -validity 20000
+
+jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 \
+    -keystore debug.keystore KivyLauncherMod.apk android
+
+adb uninstall org.kivy.pygame
+
+adb install KivyLauncherMod.apk
