@@ -1,1 +1,6 @@
 apktool d -b -s -d org.kivy.pygame-1080000.apk KivyLauncher
+
+vi KivyLauncher/AndroidManifest.xml
++    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+apktool b KivyLauncher KivyLauncherMod.apk
