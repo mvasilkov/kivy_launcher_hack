@@ -1,0 +1,1 @@
+apktool d -b -s -d org.kivy.pygame-1080000.apk KivyLauncher

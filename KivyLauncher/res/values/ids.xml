@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="icon">false</item>
+    <item type="id" name="title">false</item>
+    <item type="id" name="author">false</item>
+    <item type="id" name="projectList">false</item>
+    <item type="id" name="emptyText">false</item>
+</resources>

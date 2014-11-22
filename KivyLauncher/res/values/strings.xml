@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="appName">Kivy Launcher</string>
+    <string name="iconName">Kivy Launcher</string>
+    <string name="private_version">1391204396.27</string>
+    <string name="urlScheme">kivy</string>
+</resources>

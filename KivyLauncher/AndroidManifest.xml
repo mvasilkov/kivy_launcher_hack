@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="1080000" android:versionName="1.8.0.0" android:installLocation="auto" package="org.kivy.pygame"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <supports-screens android:anyDensity="true" android:smallScreens="true" android:normalScreens="true" android:largeScreens="true" android:xlargeScreens="true" />
+    <application android:label="@string/appName" android:icon="@drawable/icon" android:hardwareAccelerated="true">
+        <meta-data android:name="fullscreen" android:value="1" />
+        <meta-data android:name="wakelock" android:value="0" />
+        <activity android:label="@string/iconName" android:name="org.renpy.android.PythonActivity" android:process=":python" android:launchMode="singleTask" android:screenOrientation="landscape" android:configChanges="locale|mcc|mnc|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|fontScale" android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="org.renpy.LAUNCH" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="kivy" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/iconName" android:name="org.renpy.android.ProjectChooser">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <service android:name="org.renpy.android.PythonService" android:process=":PythonService" />
+    </application>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-feature android:glEsVersion="0x20000" />
+</manifest>
