@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:padding="4.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Please choose a project:" />
-    <ListView android:id="@id/projectList" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-</LinearLayout>
